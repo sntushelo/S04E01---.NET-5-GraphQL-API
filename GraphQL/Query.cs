@@ -9,6 +9,7 @@ namespace CommanderGQL.GraphQL
     public class Query
     {
         [UseDbContext(typeof(AppDbContext))]
+        //[UseProjection] this was added then Removed
         [UseFiltering]
         [UseSorting]
         public IQueryable<Platform> GetPlatform([ScopedService] AppDbContext context)

@@ -6,6 +6,8 @@ using HotChocolate.Types;
 
 namespace CommanderGQL.GraphQL.Platforms
 {
+    // Having this class, allows us to remove the GraphQL specific code from our Platform model/entity
+    // This is the code first approach
     public class PlatformType : ObjectType<Platform>
     {
         protected override void Configure(IObjectTypeDescriptor<Platform> descriptor)

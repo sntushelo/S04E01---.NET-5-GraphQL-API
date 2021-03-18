@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "d:\\S4\\E1\\CommanderGQL\\CommanderGQL.csproj": {}
+    "C:\\Dev\\api_dev\\S04E01---.NET-5-GraphQL-API\\CommanderGQL.csproj": {}
   },
   "projects": {
-    "d:\\S4\\E1\\CommanderGQL\\CommanderGQL.csproj": {
+    "C:\\Dev\\api_dev\\S04E01---.NET-5-GraphQL-API\\CommanderGQL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\S4\\E1\\CommanderGQL\\CommanderGQL.csproj",
+        "projectUniqueName": "C:\\Dev\\api_dev\\S04E01---.NET-5-GraphQL-API\\CommanderGQL.csproj",
         "projectName": "CommanderGQL",
-        "projectPath": "d:\\S4\\E1\\CommanderGQL\\CommanderGQL.csproj",
-        "packagesPath": "C:\\Users\\lesja\\.nuget\\packages\\",
-        "outputPath": "d:\\S4\\E1\\CommanderGQL\\obj\\",
+        "projectPath": "C:\\Dev\\api_dev\\S04E01---.NET-5-GraphQL-API\\CommanderGQL.csproj",
+        "packagesPath": "C:\\Users\\sntus\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\api_dev\\S04E01---.NET-5-GraphQL-API\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\lesja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sntus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -84,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

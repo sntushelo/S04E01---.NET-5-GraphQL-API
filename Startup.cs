@@ -29,11 +29,11 @@ namespace CommanderGQL
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddPooledDbContextFactory<AppDbContext>(opt => opt.UseSqlServer
-            (Configuration.GetConnectionString("CommandConStr")));
+            (Configuration.GetConnectionString("DefaultConnection")));
 
             services
                 .AddGraphQLServer()
-                .AddQueryType<Query>()
+                .AddQueryType<Query>()// .AddProjections() was initially added - accompanied by [UseProjection] on the Resolver Method
                 .AddMutationType<Mutation>()
                 .AddSubscriptionType<Subscription>()
                 .AddType<PlatformType>()
