@@ -17,7 +17,6 @@ namespace CommanderGQL.GraphQL.Commands
                 .ResolveWith<Resolvers>(c => c.GetPlatform(default!, default!))
                 .UseDbContext<AppDbContext>()
                 .Description("This is the platform to which the command belongs");
-
         }
 
         private class Resolvers

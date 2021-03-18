@@ -6,7 +6,7 @@ namespace CommanderGQL.Models
 {
     // Remove this to comply with Code First Approach
     // PlatformType class will host this
-    //[GraphQLDescription("This is the platform model in my app")]
+    // [GraphQLDescription("This is the platform model in my app")]
     public class Platform
     {
         [Key]
@@ -15,12 +15,11 @@ namespace CommanderGQL.Models
         [Required]
         public string Name { get; set; }
 
-        // Remove this to comply with Code First Approach
-        // PlatformType class will host this
+        // Removed this to comply with Code First Approach using PlatformType class 
         // [GraphQLDescription("This is the platform model license")]
+        // Also, we will not be exposing this Property to GraphQL
         public string LicenseKey { get; set; }
 
         public ICollection<Command> Commands { get; set; } = new List<Command>();
-
     }
 }

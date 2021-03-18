@@ -33,11 +33,11 @@ namespace CommanderGQL
 
             services
                 .AddGraphQLServer()
-                .AddQueryType<Query>()// .AddProjections() was initially added - accompanied by [UseProjection] on the Resolver Method
+                .AddQueryType<Query>()      // .AddProjections() was initially added - accompanied by [UseProjection] on the Resolver Method
+                .AddType<PlatformType>()        // CodeFirst: Hosts all GraphQL specific concerns for the Platform entity
+                .AddType<CommandType>()         // CodeFirst: Hosts all GraphQL specific concerns for the Command entity
                 .AddMutationType<Mutation>()
                 .AddSubscriptionType<Subscription>()
-                .AddType<PlatformType>()
-                .AddType<CommandType>()
                 .AddFiltering()
                 .AddSorting()
                 .AddInMemorySubscriptions();

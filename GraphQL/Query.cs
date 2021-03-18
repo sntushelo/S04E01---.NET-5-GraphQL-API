@@ -9,7 +9,7 @@ namespace CommanderGQL.GraphQL
     public class Query
     {
         [UseDbContext(typeof(AppDbContext))]
-        //[UseProjection] this was added then Removed
+        //[UseProjection] this was added then Removed when we took the Code First approach, as it allows us to Explicitly create Resolvers
         [UseFiltering]
         [UseSorting]
         public IQueryable<Platform> GetPlatform([ScopedService] AppDbContext context)
@@ -18,6 +18,7 @@ namespace CommanderGQL.GraphQL
         }
 
         [UseDbContext(typeof(AppDbContext))]
+        //[UseProjection] this was added then Removed when we took the Code First approach, as it allows us to Explicitly create Resolvers
         [UseFiltering]
         [UseSorting]
         public IQueryable<Command> GetCommand([ScopedService] AppDbContext context)

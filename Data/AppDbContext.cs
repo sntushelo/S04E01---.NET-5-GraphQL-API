@@ -18,14 +18,14 @@ namespace CommanderGQL.Data
             modelBuilder
                 .Entity<Platform>()
                 .HasMany(p => p.Commands)
-                .WithOne(p => p.Platform!)
-                .HasForeignKey(p => p.PlatformId);
+                .WithOne(c => c.Platform!)
+                .HasForeignKey(c => c.PlatformId);
             
             modelBuilder
                 .Entity<Command>()
-                .HasOne(p => p.Platform)
+                .HasOne(c => c.Platform)
                 .WithMany(p => p.Commands)
-                .HasForeignKey(p => p.PlatformId);
+                .HasForeignKey(c => c.PlatformId);
         }
     }
 }
